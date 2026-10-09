@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA & ÉLIXIR | Haute Parfumerie Paris</title>
+  <meta name="description" content="Discover rare artisanal extrait de parfum crafted in Grasse, France. Explore our bespoke olfactory collection, take our scent profiler quiz, and find your signature scent.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar">
+    <span>
+      <i class="fas fa-gem" style="margin-right: 6px;"></i>
+      Complimentary standard shipping & 3 bespoke samples on orders over $200 | Use Code: <b>LUMIERE15</b> for 15% off
+    </span>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="Aura and Elixir Home">
+        <div class="brand-monogram">AE</div>
+        <div class="brand-name">
+          AURA & ÉLIXIR
+          <span>Haute Parfumerie Paris</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#catalog" class="nav-link">Creations</a></li>
+          <li><a href="#quiz" class="nav-link">Scent Finder</a></li>
+          <li><a href="#families" class="nav-link">Olfactory Families</a></li>
+          <li><a href="#story" class="nav-link">The Craft</a></li>
+          <li><a href="#pyramid" class="nav-link">Notes Pyramid</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Wishlist Button -->
+        <button class="action-btn" id="openWishlistBtn" title="View Wishlist" aria-label="Wishlist">
+          <i class="far fa-heart"></i>
+          <span class="badge-count wishlist-count-badge">0</span>
+        </button>
+
+        <!-- Cart Bag Button -->
+        <button class="action-btn" id="openCartBtn" title="Shopping Bag" aria-label="Shopping Bag">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="badge-count cart-count-badge">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="action-btn mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-subtag">
+            <i class="fas fa-crown"></i> Maison Fondée en Grasse • 1894
+          </div>
+          <h1 class="hero-title">
+            The Poetry of Scent,<br>
+            Bottled in <em>Pure Eternity</em>
+          </h1>
+          <p class="hero-description">
+            Handcrafted in the French perfume capital of Grasse. Our rare extraits de parfum unite sustainably sourced botanicals, 12-year aged wild ouds, and golden resins for an aura that lingers timelessly.
+          </p>
+          <div class="hero-buttons">
+            <a href="#catalog" class="btn btn-primary">
+              <i class="fas fa-compass"></i> Explore Creations
+            </a>
+            <a href="#quiz" class="btn btn-outline">
+              <i class="fas fa-magic"></i> Take Scent Quiz
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h4>100%</h4>
+              <p>Pure Absolutes</p>
+            </div>
+            <div class="stat-item">
+              <h4>60 Days</h4>
+              <p>Slow Maceration</p>
+            </div>
+            <div class="stat-item">
+              <h4>14+ Hrs</h4>
+              <p>Sillage Longevity</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=800&q=80" alt="Aura & Elixir Luxury Flacon" loading="eager">
+          </div>
+          <div class="hero-floating-card">
+            <div class="floating-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="floating-details">
+              <h5>Prix de Parfumerie 2026</h5>
+              <p>Grand Winner - Best Niche Scent</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Highlights / Pillars Strip -->
+  <section class="highlights-bar">
+    <div class="container">
+      <div class="highlights-grid">
+        <div class="highlight-box">
+          <div class="highlight-icon">
+            <i class="fas fa-seedling"></i>
+          </div>
+          <div class="highlight-text">
+            <h5>Grasse Botanical Absolutes</h5>
+            <p>Dawn-harvested Centifolia rose and jasmine.</p>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <div class="highlight-icon">
+            <i class="fas fa-box-open"></i>
+          </div>
+          <div class="highlight-text">
+            <h5>3 Complimentary Samples</h5>
+            <p>Select tailored discovery vials with every order.</p>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <div class="highlight-icon">
+            <i class="fas fa-recycle"></i>
+          </div>
+          <div class="highlight-text">
+            <h5>Eco-Refillable Crystal Flacons</h5>
+            <p>French artisan-blown weighted glass.</p>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <div class="highlight-icon">
+            <i class="fas fa-shipping-fast"></i>
+          </div>
+          <div class="highlight-text">
+            <h5>Insured Express Delivery</h5>
+            <p>Free worldwide shipping over $200.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Olfactory Families Showcase -->
+  <section class="families-section" id="families">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Olfactory Universes</span>
+        <h2 class="section-title">Four Pillars of Emotion</h2>
+        <p class="section-desc">Each olfactory family captures a distinct chapter of human desire, mood, and memory.</p>
+      </div>
+
+      <div class="families-grid">
+        <div class="family-card" onclick="filterByCategory('woody')">
+          <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=600&q=80" alt="Woody & Oud Fragrance Family">
+          <div class="family-overlay">
+            <h3>Les Boisés & Oud</h3>
+            <p>Smoked agarwood, Tuscan leather & sandalwood.</p>
+            <span>Explore Family <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <div class="family-card" onclick="filterByCategory('floral')">
+          <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80" alt="Floral & Botanical Fragrance Family">
+          <div class="family-overlay">
+            <h3>Les Floraux Nobles</h3>
+            <p>Centifolia roses, French jasmine & peony nectar.</p>
+            <span>Explore Family <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <div class="family-card" onclick="filterByCategory('amber')">
+          <img src="https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=600&q=80" alt="Amber & Spice Fragrance Family">
+          <div class="family-overlay">
+            <h3>L'Ambre & Épices</h3>
+            <p>Golden benzoin, Madagascar vanilla & saffron.</p>
+            <span>Explore Family <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <div class="family-card" onclick="filterByCategory('fresh')">
+          <img src="https://images.unsplash.com/photo-1583445013765-46c20c4a6772?auto=format&fit=crop&w=600&q=80" alt="Fresh & Citrus Fragrance Family">
+          <div class="family-overlay">
+            <h3>Les Frais & Agrumes</h3>
+            <p>Riviera neroli, crushed verbena & sea salt.</p>
+            <span>Explore Family <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Scent Profiler Quiz Section -->
+  <section class="quiz-section" id="quiz">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Profiler</span>
+        <h2 class="section-title">Find Your Signature Scent</h2>
+        <p class="section-desc">Answer three intuitive questions to unveil the fragrance harmoniously tuned to your spirit.</p>
+      </div>
+
+      <div class="quiz-container">
+        <!-- Progress bar -->
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill" id="quizProgressFill"></div>
+        </div>
+
+        <!-- Active Question Container -->
+        <div id="quizActiveQuestion">
+          <div class="quiz-header">
+            <span class="quiz-step-badge" id="quizStepBadge">Olfactory Consultation • Step 01 / 03</span>
+            <h3 class="quiz-question-title" id="quizQuestionTitle">What essence or feeling do you wish to evoke?</h3>
+            <p class="quiz-question-desc" id="quizQuestionDesc">Your fragrance should be an unspoken reflection of your persona.</p>
+          </div>
+
+          <div class="quiz-options-grid" id="quizOptionsGrid">
+            <!-- Rendered by js/app.js -->
+          </div>
+
+          <div class="quiz-actions">
+            <button class="btn btn-outline btn-small" id="quizPrevBtn" onclick="prevQuizStep()">
+              <i class="fas fa-arrow-left"></i> Previous
+            </button>
+            <button class="btn btn-primary btn-small" id="quizNextBtn" onclick="nextQuizStep()" disabled>
+              Continue <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quiz Result Screen -->
+        <div class="quiz-result-card" id="quizResultCard">
+          <div id="quizMatchContainer">
+            <!-- Rendered dynamically on quiz completion -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fragrance Catalog Section -->
+  <section class="catalog-section" id="catalog">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Flacons d'Exception</span>
+        <h2 class="section-title">The Haute Collection</h2>
+        <p class="section-desc">Eight masterwork extraits de parfum, composed with uncompromised integrity and high concentrations.</p>
+      </div>
+
+      <!-- Catalog Toolbar (Filter Tabs, Search, Sort) -->
+      <div class="catalog-toolbar">
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All Flacons</button>
+          <button class="filter-tab" data-filter="woody">Woody & Oud</button>
+          <button class="filter-tab" data-filter="floral">Floral & Rose</button>
+          <button class="filter-tab" data-filter="amber">Amber & Spice</button>
+          <button class="filter-tab" data-filter="fresh">Fresh Citrus</button>
+        </div>
+
+        <div class="search-sort-box">
+          <div class="search-wrapper">
+            <input type="text" id="catalogSearch" class="search-input" placeholder="Search by note, name..." aria-label="Search Fragrances">
+            <i class="fas fa-search search-icon"></i>
+          </div>
+
+          <select id="sortSelect" class="sort-select" aria-label="Sort Fragrances">
+            <option value="featured">Featured First</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Highest Rated</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Catalog Count Status -->
+      <div class="catalog-status">
+        <span id="catalogCount">Displaying 8 Haute Flacons</span>
+        <span style="font-size: 0.78rem; color: var(--gold-light);"><i class="fas fa-truck"></i> Express Worldwide Dispatch within 24h</span>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Rendered by js/app.js -->
+      </div>
+
+      <!-- Empty State -->
+      <div class="catalog-empty" id="catalogEmpty">
+        <i class="fas fa-wind"></i>
+        <h3>No Flacons Found</h3>
+        <p>Try searching for a different note or resetting your category filter.</p>
+        <button class="btn btn-outline btn-small" onclick="resetFilters()" style="margin-top: 1.25rem;">
+          Reset Filters
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Craft & Grasse Heritage Story -->
+  <section class="story-section" id="story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-media">
+          <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80" alt="Parfumeur Laboratory in Grasse" class="story-img-main" loading="lazy">
+          <div class="story-badge-floating">
+            <h4>Grasse</h4>
+            <p>World Capital of Perfumery</p>
+          </div>
+        </div>
+
+        <div class="story-content">
+          <span class="section-tag">The Art of Haute Parfumerie</span>
+          <h2>Where Botanicals Meet Timeless Mastery</h2>
+          <p>
+            In the sun-blessed hills of Grasse, surrounded by jasmine and centifolia roses that have bloomed for centuries, Aura & Élixir continues a legacy of slow, respectful formulation. We reject industrial shortcuts in favor of patience.
+          </p>
+          <p>
+            Every flacon matures for a minimum of 60 days in French glass vessels, allowing the dense natural absolutes and rare distillates to marry into a seamless, velvety symphony that evolves intimately on your skin.
+          </p>
+
+          <div class="story-pillars">
+            <div class="pillar-item">
+              <h5><i class="fas fa-leaf"></i> Wild Ethical Sourcing</h5>
+              <p>Botanicals harvested in strict alignment with regional regenerative agriculture.</p>
+            </div>
+            <div class="pillar-item">
+              <h5><i class="fas fa-hourglass-half"></i> 60-Day Slow Maceration</h5>
+              <p>Patient maturation ensures deep richness without aggressive synthetic fixatives.</p>
+            </div>
+            <div class="pillar-item">
+              <h5><i class="fas fa-tint"></i> 30% Extrait Concentration</h5>
+              <p>Maximum fragrance oil load for unmatched 14+ hour longevity and memorable sillage.</p>
+            </div>
+            <div class="pillar-item">
+              <h5><i class="fas fa-shield-alt"></i> Cruelty-Free & Pure</h5>
+              <p>PETA-certified cruelty-free, devoid of parabens, phthalates, and unnecessary additives.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Olfactory Notes Pyramid Section -->
+  <section class="pyramid-section" id="pyramid">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Olfactory Architecture</span>
+        <h2 class="section-title">The Anatomy of an Extrait</h2>
+        <p class="section-desc">Understanding how a true luxury perfume reveals itself in three harmonious movements over time.</p>
+      </div>
+
+      <div class="pyramid-grid">
+        <div class="pyramid-card">
+          <span class="pyramid-step">Movement I</span>
+          <h3>Top Notes (Head)</h3>
+          <span class="pyramid-time">First 15 to 30 Minutes</span>
+          <p>
+            The luminous overture. Made of volatile, delicate essences such as Calabrian bergamot, Tunisian neroli, and pink pepper. They create the unforgettable initial spark upon spraying.
+          </p>
+        </div>
+
+        <div class="pyramid-card" style="border-color: var(--gold-border);">
+          <span class="pyramid-step">Movement II</span>
+          <h3>Heart Notes (Cœur)</h3>
+          <span class="pyramid-time">Hours 2 through 6</span>
+          <p>
+            The pulsating emotional core. Rich Damask roses, Tuscan leather, saffron threads, and warm iris butter bloom once top notes soften, providing full-bodied presence and nuance.
+          </p>
+        </div>
+
+        <div class="pyramid-card">
+          <span class="pyramid-step">Movement III</span>
+          <h3>Base Notes (Fond)</h3>
+          <span class="pyramid-time">Hours 6 through 16+</span>
+          <p>
+            The sensual, indelible dry-down. Aged Cambodian agarwood, Madagascar bourbon vanilla, warm fossilized amber, and ambergris linger on textiles and skin into the next morning.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Press & Verified Reviews Section -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <!-- Press Quotes -->
+      <div class="press-row">
+        <div class="press-quote">
+          <p>"An enigmatic rebirth of French haute parfumerie with unmatched sillage."</p>
+          <span>Vogue International</span>
+        </div>
+        <div class="press-quote">
+          <p>"Ébène Mystique sets a new gold standard for woody niche fragrances."</p>
+          <span>GQ Grooming Awards</span>
+        </div>
+        <div class="press-quote">
+          <p>"Sensual, rare, and bottled with the precision of a high jeweler."</p>
+          <span>Harper's Bazaar</span>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <span class="section-tag">Private Connoisseurs</span>
+        <h2 class="section-title">Echoes of Delight</h2>
+        <p class="section-desc">Read impressions from our worldwide collectors of fine fragrance.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">
+            "Soleil de Santal is unlike anything else in my niche collection. The creamy sandalwood with bourbon vanilla is hypnotic. Strangers constantly stop to ask what I am wearing."
+          </p>
+          <div class="review-author">
+            <div class="author-info">
+              <h5>Eleanor Vance</h5>
+              <span>London, United Kingdom</span>
+            </div>
+            <span class="verified-tag"><i class="fas fa-check-circle"></i> Verified Buyer</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">
+            "The packaging alone is museum quality. The heavy flacon feels like a jewel, and Ébène Mystique lasted through a 14-hour flight. Exceptional craftsmanship!"
+          </p>
+          <div class="review-author">
+            <div class="author-info">
+              <h5>Marcus Sterling</h5>
+              <span>New York, NY</span>
+            </div>
+            <span class="verified-tag"><i class="fas fa-check-circle"></i> Verified Buyer</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">
+            "I took the Scent Finder quiz and was matched with Rose de Mai Royale. It is the purest, most sophisticated dewy rose I have ever experienced. Truly magnificent."
+          </p>
+          <div class="review-author">
+            <div class="author-info">
+              <h5>Camille Dubois</h5>
+              <span>Geneva, Switzerland</span>
+            </div>
+            <span class="verified-tag"><i class="fas fa-check-circle"></i> Verified Buyer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter / VIP Club Section -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-box">
+        <span class="section-tag">Maison Privilège</span>
+        <h2 class="section-title">Join The Olfactory Circle</h2>
+        <p class="section-desc">
+          Receive private invitations to confidential preview releases, masterclasses with our Parfumeurs, and 15% off your inaugural order.
+        </p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" class="newsletter-input" placeholder="Enter your email address..." required aria-label="Email Address">
+          <button type="submit" class="btn btn-primary">
+            Request Invitation <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+        <p class="newsletter-note">By subscribing, you respect our privacy charter. Unsubscribe at any moment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="brand-monogram">AE</div>
+            <div class="brand-name">
+              AURA & ÉLIXIR
+              <span>Haute Parfumerie Paris</span>
+            </div>
+          </div>
+          <p>
+            Artisanal olfactory creations blended in Grasse, France. Bottles of emotional resonance, rare botanicals, and enduring French elegance.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>The Maison</h4>
+          <ul class="footer-links">
+            <li><a href="#story">Our Grasse Heritage</a></li>
+            <li><a href="#catalog">The Fragrance Archive</a></li>
+            <li><a href="#pyramid">The Scent Pyramid</a></li>
+            <li><a href="#quiz">Bespoke Scent Consultation</a></li>
+            <li><a href="#">Sustainability & Glass Craft</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="#" onclick="openCart(); return false;">Your Shopping Bag</a></li>
+            <li><a href="#" onclick="openWishlist(); return false;">Saved Flacons</a></li>
+            <li><a href="#">Complimentary Samples Guide</a></li>
+            <li><a href="#">White-Glove Shipping & Returns</a></li>
+            <li><a href="#">Flacon Refill Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Boutiques</h4>
+          <div class="boutique-item">
+            <h5>Paris Vendôme</h5>
+            <p>18 Place Vendôme, 75001 Paris, France</p>
+          </div>
+          <div class="boutique-item">
+            <h5>London Mayfair</h5>
+            <p>42 Old Bond Street, London W1S 4QR, UK</p>
+          </div>
+          <div class="boutique-item">
+            <h5>New York Madison</h5>
+            <p>780 Madison Ave, New York, NY 10065, USA</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aura & Élixir Maison de Parfumerie. All rights reserved.</p>
+        <div class="payment-badges">
+          <i class="fab fa-cc-visa" title="Visa"></i>
+          <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+          <i class="fab fa-cc-amex" title="American Express"></i>
+          <i class="fab fa-apple-pay" title="Apple Pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-Out Shopping Cart Drawer -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h3 class="cart-title">
+        <i class="fas fa-shopping-bag" style="color: var(--gold-primary);"></i> Shopping Bag
+      </h3>
+      <button class="close-btn" id="closeCartBtn" aria-label="Close Shopping Bag">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- Free Shipping Milestone Progress -->
+    <div class="free-shipping-bar">
+      <div id="shippingMsg">Add items to unlock complimentary worldwide shipping</div>
+      <div class="shipping-progress">
+        <div class="shipping-fill" id="shippingProgressFill"></div>
+      </div>
+    </div>
+
+    <!-- Items List -->
+    <div class="cart-items-list" id="cartItemsList">
+      <!-- Rendered dynamically -->
+    </div>
+
+    <!-- Empty View inside cart -->
+    <div class="cart-empty-view" id="cartEmptyView" style="display: none;">
+      <i class="fas fa-spray-can"></i>
+      <h4 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 0.4rem;">Your Bag is Empty</h4>
+      <p>Discover our signature creations and elevate your presence.</p>
+      <button class="btn btn-primary btn-small" onclick="closeCart(); location.href='#catalog';">
+        Explore Catalog
+      </button>
+    </div>
+
+    <!-- Cart Footer & Checkout -->
+    <div class="cart-footer">
+      <div class="promo-section">
+        <input type="text" id="promoInput" class="promo-input" placeholder="Promo code (e.g. LUMIERE15)" aria-label="Promo Code">
+        <button class="btn btn-outline btn-small" id="applyPromoBtn">Apply</button>
+      </div>
+
+      <div class="promo-applied-badge" id="promoAppliedBadge" style="display: none;"></div>
+
+      <div class="cart-summary-line">
+        <span>Flacons Subtotal</span>
+        <span id="cartSubtotal">$0</span>
+      </div>
+
+      <div class="cart-summary-line" id="cartDiscountRow" style="display: none; color: #2ed573;">
+        <span>VIP Privilege Discount (15%)</span>
+        <span id="cartDiscount">-$0</span>
+      </div>
+
+      <div class="cart-summary-line">
+        <span>Insured Courier Shipping</span>
+        <span id="cartShipping">FREE</span>
+      </div>
+
+      <div class="cart-total-line">
+        <span>Estimated Total</span>
+        <span id="cartTotal" class="gold-text">$0</span>
+      </div>
+
+      <button class="btn btn-primary btn-full" id="proceedCheckoutBtn">
+        Proceed to Checkout <i class="fas fa-lock" style="font-size: 0.75rem; margin-left: 4px;"></i>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Slide-Out Wishlist Drawer -->
+  <aside class="wishlist-drawer" id="wishlistDrawer" aria-label="Wishlist">
+    <div class="cart-header">
+      <h3 class="cart-title">
+        <i class="fas fa-heart" style="color: #ff4757;"></i> Private Wishlist
+      </h3>
+      <button class="close-btn" id="closeWishlistBtn" aria-label="Close Wishlist">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="wishlist-items-list" id="wishlistItemsList">
+      <!-- Rendered dynamically -->
+    </div>
+
+    <div class="cart-empty-view" id="wishlistEmptyView" style="display: none;">
+      <i class="far fa-heart"></i>
+      <h4 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 0.4rem;">No Saved Fragrances</h4>
+      <p>Click the heart icon on any flacon to save it for later.</p>
+      <button class="btn btn-outline btn-small" onclick="closeWishlist(); location.href='#catalog';">
+        Browse Creations
+      </button>
+    </div>
+  </aside>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="quickViewModal" aria-modal="true" role="dialog">
+    <div class="quickview-modal-content">
+      <button class="modal-close-btn modal-close-trigger" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div class="quickview-media">
+        <img id="qvImage" src="" alt="Fragrance flacon">
+      </div>
+
+      <div class="quickview-details">
+        <span class="quickview-category" id="qvCategory">Woody & Oud</span>
+        <h2 class="quickview-title" id="qvTitle">Ébène Mystique</h2>
+        <p class="quickview-subtitle" id="qvSubtitle">Extrait de Parfum</p>
+        <div class="quickview-price" id="qvPrice">$185</div>
+        <p class="quickview-description" id="qvDescription"></p>
+
+        <!-- Scent Pyramid Breakdown -->
+        <div class="modal-pyramid">
+          <div class="modal-pyramid-row">
+            <span class="modal-pyramid-label">Top Notes:</span>
+            <span class="modal-pyramid-vals" id="qvTopNotes"></span>
+          </div>
+          <div class="modal-pyramid-row">
+            <span class="modal-pyramid-label">Heart Notes:</span>
+            <span class="modal-pyramid-vals" id="qvHeartNotes"></span>
+          </div>
+          <div class="modal-pyramid-row">
+            <span class="modal-pyramid-label">Base Notes:</span>
+            <span class="modal-pyramid-vals" id="qvBaseNotes"></span>
+          </div>
+        </div>
+
+        <div class="quickview-specs">
+          <span id="qvLongevity">Longevity: <b>14+ Hours</b></span>
+          <span id="qvSillage">Sillage: <b>Enveloping</b></span>
+        </div>
+
+        <!-- Bottle Size Switcher -->
+        <div style="margin-bottom: 1.5rem;">
+          <span style="font-family: var(--font-display); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 0.5rem;">Select Flacon Size:</span>
+          <div class="product-sizes-selector" id="qvSizesContainer">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Quantity & Add to Bag -->
+        <div class="quickview-actions">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <input type="number" id="qvQty" value="1" min="1" max="10" class="form-control" style="width: 70px; text-align: center;" aria-label="Quantity">
+          </div>
+          <button class="btn btn-primary" onclick="addQuickViewToBag()" style="flex-grow: 1;">
+            <i class="fas fa-shopping-bag"></i> Add to Bag
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mock Checkout Modal -->
+  <div class="modal-overlay" id="checkoutModal" aria-modal="true" role="dialog">
+    <div class="checkout-modal-content">
+      <button class="modal-close-btn modal-close-trigger" aria-label="Close checkout">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div id="checkoutFormScreen">
+        <div class="checkout-header">
+          <span class="section-tag">Secure Encrypted Checkout</span>
+          <h2 style="font-family: var(--font-serif); font-size: 2rem;">Maison Aura & Élixir</h2>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Please provide your delivery and payment credentials</p>
+        </div>
+
+        <div class="checkout-grid">
+          <!-- Left: Details Form -->
+          <form id="checkoutForm">
+            <h4 style="font-family: var(--font-display); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 1rem;">1. Delivery Destination</h4>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" class="form-control" required placeholder="Alexander">
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" class="form-control" required placeholder="Sinclair">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Email Address for Tracking</label>
+              <input type="email" class="form-control" required placeholder="alexander@domain.com">
+            </div>
+
+            <div class="form-group">
+              <label>Street Address</label>
+              <input type="text" class="form-control" required placeholder="742 Evergreen Terrace, Suite 4B">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>City</label>
+                <input type="text" class="form-control" required placeholder="Paris / New York">
+              </div>
+              <div class="form-group">
+                <label>Postal Code</label>
+                <input type="text" class="form-control" required placeholder="10001">
+              </div>
+            </div>
+
+            <h4 style="font-family: var(--font-display); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-light); margin: 1.5rem 0 1rem 0;">2. Payment Method</h4>
+            
+            <div class="payment-method-selector">
+              <div class="payment-btn-option active">
+                <i class="far fa-credit-card"></i> Card
+              </div>
+              <div class="payment-btn-option">
+                <i class="fab fa-apple-pay"></i> Apple Pay
+              </div>
+              <div class="payment-btn-option">
+                <i class="fab fa-paypal"></i> PayPal
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Card Number</label>
+              <input type="text" class="form-control" placeholder="•••• •••• •••• 4242" value="4532 •••• •••• 8912">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Expiry</label>
+                <input type="text" class="form-control" placeholder="MM/YY" value="08/28">
+              </div>
+              <div class="form-group">
+                <label>CVC</label>
+                <input type="password" class="form-control" placeholder="CVC" value="888">
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" style="margin-top: 1.5rem;">
+              Confirm & Authorize Order <i class="fas fa-lock"></i>
+            </button>
+          </form>
+
+          <!-- Right: Order Summary -->
+          <div class="checkout-summary-box">
+            <h4>Order Summary</h4>
+            <div class="checkout-order-items" id="checkoutItemsContainer">
+              <!-- Rendered dynamically -->
+            </div>
+
+            <div style="font-size: 0.82rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
+              <div style="display: flex; justify-content: space-between;">
+                <span>Subtotal:</span>
+                <span id="checkoutSubtotal">$0</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; color: #2ed573;">
+                <span>Privilège Discount:</span>
+                <span id="checkoutDiscount">-$0</span>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span>Insured Courier:</span>
+                <span id="checkoutShipping">FREE</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-family: var(--font-display); font-size: 1.15rem; color: #fff; font-weight: 700; border-top: 1px solid var(--border-subtle); padding-top: 0.6rem; margin-top: 0.4rem;">
+                <span>Total:</span>
+                <span id="checkoutTotal" class="gold-text">$0</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem; padding: 0.8rem; background: rgba(212, 175, 55, 0.05); border: 1px dashed var(--gold-border); border-radius: var(--radius-sm); font-size: 0.75rem; color: var(--gold-light);">
+              <i class="fas fa-shield-alt" style="margin-right: 4px;"></i> 256-bit encrypted checkout. Complimentary luxury gift box and 3 bespoke discovery vials included.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Success Screen -->
+      <div class="order-success-screen" id="orderSuccessScreen">
+        <div class="order-success-icon">
+          <i class="fas fa-check"></i>
+        </div>
+        <span class="order-id-badge" id="confirmedOrderId">ORDER #AE-829143</span>
+        <h3>Bespoke Order Confirmed</h3>
+        <p>
+          Thank you for choosing Maison Aura & Élixir. Your flacons are now being carefully packed by hand in Grasse, France with our signature satin ribbons and wax seal.
+        </p>
+        <p style="font-size: 0.82rem; color: var(--gold-light); margin-bottom: 2rem;">
+          A dispatch notification with your insured courier tracking number has been sent to your email.
+        </p>
+        <button class="btn btn-primary" onclick="document.getElementById('checkoutModal').classList.remove('open')">
+          Return to The Maison
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Helper utility scripts for inline category link clicks -->
+  <script>
+    function filterByCategory(cat) {
+      const tabs = document.querySelectorAll('.filter-tab');
+      tabs.forEach(tab => {
+        if (tab.getAttribute('data-filter') === cat) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+      state.currentFilter = cat;
+      renderCatalog();
+      const el = document.getElementById('catalog');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function resetFilters() {
+      state.currentFilter = 'all';
+      state.searchQuery = '';
+      const search = document.getElementById('catalogSearch');
+      if (search) search.value = '';
+      const tabs = document.querySelectorAll('.filter-tab');
+      tabs.forEach(t => t.classList.toggle('active', t.getAttribute('data-filter') === 'all'));
+      renderCatalog();
+    }
+  </script>
+
+  <!-- Load Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
